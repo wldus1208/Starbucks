@@ -13,10 +13,10 @@ public class HomeCont {
   public HomeCont() {
     
   }
-
-  @RequestMapping(value = {"/", "/index.do"}, method = RequestMethod.GET)
+  
+  @RequestMapping("/")
   public String home(Locale locale, Model model) {
 
-      return "index";
+      return "/main/main";
   }
 }
